@@ -1,0 +1,23 @@
+Name:                   GLFWExperiment
+Version:                0.0
+Description:            Experiments with GLFW
+License:                GPL
+License-file:           LICENSE
+Author:                 Curtis McKinney
+Maintainer:             casiosk1@gmail.com
+Build-Type:             Simple
+Cabal-Version:          >=1.2
+Executable GLFWExperiment
+    Main-is:            GLFWExperiment.hs
+    hs-source-dirs:     src
+    ghc-options:        -threaded -XFlexibleInstances -XInstanceSigs -XRankNTypes
+    Build-Depends:     
+        base >= 3 && < 5,
+        GLFW-b       == 1.2.*,
+        OpenGL       == 2.8.*,
+        base          < 5,
+        mtl          == 2.1.*,
+        pretty       == 1.1.*,
+        stm          == 2.4.*,
+        transformers == 0.3.*,
+        containers
